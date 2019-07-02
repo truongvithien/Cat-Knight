@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cat Knight</title>
+    </head>
+    <body style='margin : 0px; overflow: hidden;'>
+      <a-scene embedded arjs='sourceType: webcam;'>
+        <!-- Preload assets: img, video, gltf obj -->
+        <a-assets>
+          <a-asset-item id="mech_drone" src="assets/gltf/mech_drone/scene.gltf">
+        </a-assets>
+
+        <!-- Marker 1 -->
+        <!-- <a-marker type='pattern' url='assets/pat/iron.patt'>
+          <a-video rotation="90 -180 0" width="2" height="4" src="assets/vid/hiep_si_meo.mp4"></a-video>
+        </a-marker> -->
+
+        <!-- Marker 2 -->
+        <!-- <a-marker preset='hiro'>
+          <a-box position='0 0.5 0' material='color: green;'></a-box>
+        </a-marker> -->
+
+        <!-- Marker 3 -->
+        <a-marker type='barcode' value='0'>
+          <a-gltf-model src="#mech_drone"></a-gltf-model>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+      </a-scene>
+      <script src="assets/bundle.js"></script>
+    </body>
+</html>
