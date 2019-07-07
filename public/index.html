@@ -6,7 +6,9 @@
         <script src="assets/bundle.js"></script>
     </head>
     <body style=''>
-      <a-scene embedded arjs='sourceType: webcam;'>
+      <!-- <a-scene embedded arjs='sourceType: webcam;'> -->
+      <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+
 
         <!-- Marker 1 -->
         <a-marker type='barcode' value='0'>
