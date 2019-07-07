@@ -1,0 +1,13 @@
+body {
+	margin : 0px; 
+	overflow: hidden;
+}
+
+
+#arjsDebugUIContainer {
+	display: none;
+}
+
+.a-enter-vr {
+	display: none;
+}
