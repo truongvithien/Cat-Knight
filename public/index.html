@@ -1,35 +1,46 @@
 <!doctype html>
 <html>
     <head>
-        <!-- <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <title>Cat Knight</title>
+        <title>Khe 's thesis</title>
+        <link rel="stylesheet" href="assets/style.css">
         <script src="assets/bundle.js"></script>
     </head>
     <body style='margin : 0px; overflow: hidden;'>
       <a-scene embedded arjs='sourceType: webcam;'>
         <!-- Preload assets: img, video, gltf obj -->
         <a-assets>
-          <a-asset-item id="mech_drone" src="assets/gltf/mech_drone/scene.gltf">
+          <a-asset-item id="miso" src="assets/vid/miso.mp4">
+          <a-asset-item id="omi" src="assets/vid/omi.mp4">
+          <a-asset-item id="smoothie" src="assets/vid/smoothie.mp4">
+          <a-asset-item id="ban_ve_so" src="assets/vid/ban_ve_so.mp4">
+          <a-asset-item id="tiem_ban_ca" src="assets/vid/tiem_ban_ca.mp4">
         </a-assets>
 
         <!-- Marker 1 -->
-        <a-marker type='pattern' url='assets/pat/iron.patt'>
-          <a-video rotation="90 -180 0" width="2" height="4" src="assets/vid/hiep_si_meo.mp4"></a-video>
+        <a-marker type='barcode' value='0'>
+          <a-video src="#miso" rotation="90 -180 0" width="2" height="4" ></a-video>
         </a-marker>
 
         <!-- Marker 2 -->
-        <a-marker preset='hiro'>
-          <a-box position='0 0.5 0' material='color: green;'></a-box>
+        <a-marker type='barcode' value='1'>
+          <a-video src="#omi" rotation="90 -180 0" width="2" height="4"></a-video>
         </a-marker>
 
         <!-- Marker 3 -->
-        <a-marker type='barcode' value='0'>
-          <!-- <a-box position='0 0.5 0' material='color: green;'></a-box> -->
-          <a-entity gltf-model="#mech_drone" scale="0.015 0.015 0.015" animation-mixer >
-          </a-entity>
+        <a-marker type='barcode' value='2'>
+          <a-video src="#smoothie" rotation="90 -180 0" width="2" height="4"></a-video>
         </a-marker>
+
+        <!-- Marker 4 -->
+        <a-marker type='barcode' value='3'>
+          <a-video src="#ban_ve_so" rotation="90 -180 0" width="2" height="4"></a-video>
+        </a-marker>
+
+        <!-- Marker 5 -->
+        <a-marker type='barcode' value='4'>
+          <a-video src="#tiem_ban_ca" rotation="90 -180 0" width="2" height="4"></a-video>
+        </a-marker>
+
 
         <a-entity camera></a-entity>
       </a-scene>
