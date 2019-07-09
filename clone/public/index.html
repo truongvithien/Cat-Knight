@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>LamKhe 's thesis</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <script src="assets/bundle.js"></script>
+    </head>
+    <body style=''>        
+      <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+
+        <!-- Marker 1 -->
+        <a-marker type='barcode' value='0'>
+          <a-video src="assets/vid/miso.mp4" rotation="-90 0 0" width="2" height="4" position=""></a-video>
+        </a-marker>
+
+        <!-- Marker 2 -->
+        <a-marker type='barcode' value='1'>
+          <a-video src="assets/vid/omi.mp4" rotation="-90 0 0" width="2" height="4" position=""></a-video>
+        </a-marker>
+
+        <!-- Marker 3 -->
+        <a-marker type='barcode' value='2'>
+          <a-video src="assets/vid/smoothie.mp4" rotation="-90 0 0" width="2" height="4" position=""></a-video>
+        </a-marker>
+
+        <!-- Marker 4 -->
+        <a-marker type='barcode' value='3'>
+          <a-video src="assets/vid/ban_ve_so.mp4" rotation="-90 0 0" width="2" height="4"  position=""></a-video>
+        </a-marker>
+
+        <!-- Marker 5 -->
+        <a-marker type='barcode' value='4'>
+          <a-video src="assets/vid/tiem_ban_ca.mp4" rotation="-90 0 0" width="2" height="4" position=""></a-video>
+        </a-marker>
+
+
+        <a-entity camera></a-entity>
+      </a-scene>
+    </body>
+</html>
+
+<!-- 
+
+ qr: 160 x 160
+
+ trang: 2008 x 2717
+
+ left: -795
+
+ top: -1138
+
+ --- 
+
+qr 103
+
+ trang: 952 x 1696
+
+left: -424
+
+top: -895
+
+
+--> 
